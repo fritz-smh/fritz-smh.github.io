@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+    <meta charset="utf-8">
+    <style>
+body {
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+}
+.image {
+    /*
+    display: block;
+    */
+    margin: 2em auto;
+    background-color: #444;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+table {
+}
+td {
+    vertical-align: middle;
+}
+img {
+    /*
+    display: block;
+    */
+}
+    </style>
+    <script src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/jquery.js" charsest="utf-8"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/bootstrap.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/bootstrap-table.css">
+    <link href="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/bootstrap-table-sticky-header.css" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/jquery-3.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/bootstrap.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/bootstrap-table.js"></script>
+    <script src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/bootstrap-table-filter-control.js"></script>
+    <script src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/bootstrap-table-sticky-header.js"></script>
+
+    <script>
+      $(document).ready(function() {
+      });
+    </script>
+</head>
+<body>
+  <div class="bootstrap-table bootstrap4">
+      <div class="fixed-table-toolbar">
+        <div class="float-right search btn-group">
+          <div class="input-group"><input class="form-control
+        
+        search-input" type="search" placeholder="Search" autocomplete="off"><div class="input-group-append"><button class="btn btn-secondary" type="button" name="clearSearch" title="Clear filters"><i class="fa fa-trash"></i> </button></div></div>
+        </div>
+      </div>
+      
+      <div class="fixed-table-container" style="padding-bottom: 0px;">
+      <div class="fixed-table-header" style="display: none;"><table></table></div>
+      <div class="fixed-table-body">
+      <div class="fixed-table-loading table table-bordered table-hover" style="top: 88.6667px;">
+      <span class="loading-wrap">
+      <span class="loading-text">Loading, please wait</span>
+      <span class="animation-wrap"><span class="animation-dot"></span></span>
+      </span>
+    
+      </div>
+      <div class="sticky-header-container fixed-table-container" style="top: 0px; left: 0px; right: 0px; display: none;"><table class="table table-bordered table-hover"><thead class="sticky-header"><tr><th style="min-width: 216.083px;" data-field="datetime"><div class="th-inner sortable both">Datetime</div><div class="fht-cell"><div class="filter-control"><select class="form-control bootstrap-table-filter-control-datetime" style="width: 100%;" dir="ltr"><option value="" selected="selected"></option><option value="2018-01-05 09:00:59">2018-01-05 09:00:59</option><option value="2018-02-14 01:39:59">2018-02-14 01:39:59</option><option value="2018-02-14 15:46:59">2018-02-14 15:46:59</option><option value="2018-02-17 02:31:59">2018-02-17 02:31:59</option><option value="2018-02-20 04:31:59">2018-02-20 04:31:59</option><option value="2018-02-27 08:11:59">2018-02-27 08:11:59</option><option value="2018-03-04 23:51:59">2018-03-04 23:51:59</option><option value="2018-03-13 13:55:59">2018-03-13 13:55:59</option><option value="2018-03-21 04:24:59">2018-03-21 04:24:59</option><option value="2018-03-23 19:56:59">2018-03-23 19:56:59</option><option value="2018-04-12 11:10:59">2018-04-12 11:10:59</option><option value="2018-04-12 11:22:59">2018-04-12 11:22:59</option><option value="2018-04-17 07:06:59">2018-04-17 07:06:59</option><option value="2018-04-19 13:06:59">2018-04-19 13:06:59</option><option value="2018-04-20 10:40:59">2018-04-20 10:40:59</option><option value="2018-04-24 00:32:59">2018-04-24 00:32:59</option><option value="2018-04-24 02:13:59">2018-04-24 02:13:59</option><option value="2018-04-24 04:28:59">2018-04-24 04:28:59</option><option value="2018-04-24 12:37:59">2018-04-24 12:37:59</option><option value="2018-05-03 02:52:59">2018-05-03 02:52:59</option><option value="2018-05-04 21:00:59">2018-05-04 21:00:59</option><option value="2018-05-05 10:12:59">2018-05-05 10:12:59</option><option value="2018-05-06 04:13:59">2018-05-06 04:13:59</option><option value="2018-05-10 02:17:59">2018-05-10 02:17:59</option><option value="2018-05-18 12:19:59">2018-05-18 12:19:59</option><option value="2018-06-01 22:46:59">2018-06-01 22:46:59</option><option value="2018-06-06 07:17:59">2018-06-06 07:17:59</option><option value="2018-07-04 08:20:59">2018-07-04 08:20:59</option><option value="2018-07-15 08:36:59">2018-07-15 08:36:59</option><option value="2018-07-16 09:43:59">2018-07-16 09:43:59</option><option value="2018-07-16 11:20:59">2018-07-16 11:20:59</option><option value="2018-07-16 17:38:59">2018-07-16 17:38:59</option><option value="2018-07-17 17:38:59">2018-07-17 17:38:59</option><option value="2018-07-17 17:40:59">2018-07-17 17:40:59</option><option value="2018-07-17 18:02:59">2018-07-17 18:02:59</option><option value="2018-07-24 04:47:59">2018-07-24 04:47:59</option><option value="2018-07-27 11:59:59">2018-07-27 11:59:59</option><option value="2018-08-26 23:30:59">2018-08-26 23:30:59</option><option value="2018-08-27 04:31:59">2018-08-27 04:31:59</option><option value="2018-08-27 05:55:59">2018-08-27 05:55:59</option><option value="2018-08-27 19:31:59">2018-08-27 19:31:59</option><option value="2018-08-27 19:45:59">2018-08-27 19:45:59</option><option value="2018-08-27 22:55:59">2018-08-27 22:55:59</option><option value="2018-08-28 01:04:59">2018-08-28 01:04:59</option><option value="2018-09-01 00:54:59">2018-09-01 00:54:59</option><option value="2018-09-01 15:01:59">2018-09-01 15:01:59</option><option value="2018-09-01 16:10:59">2018-09-01 16:10:59</option><option value="2018-09-03 15:54:59">2018-09-03 15:54:59</option><option value="2018-09-04 11:06:59">2018-09-04 11:06:59</option><option value="2018-09-20 11:00:59">2018-09-20 11:00:59</option><option value="2018-09-20 22:46:59">2018-09-20 22:46:59</option><option value="2018-09-21 07:18:59">2018-09-21 07:18:59</option><option value="2018-09-22 00:04:59">2018-09-22 00:04:59</option><option value="2018-09-23 09:24:59">2018-09-23 09:24:59</option><option value="2018-09-27 12:41:59">2018-09-27 12:41:59</option><option value="2018-09-28 03:56:59">2018-09-28 03:56:59</option><option value="2018-10-02 20:53:59">2018-10-02 20:53:59</option><option value="2018-10-07 15:30:59">2018-10-07 15:30:59</option><option value="2018-10-08 09:50:59">2018-10-08 09:50:59</option><option value="2018-10-08 12:05:59">2018-10-08 12:05:59</option><option value="2018-10-08 12:38:59">2018-10-08 12:38:59</option><option value="2018-10-08 15:33:59">2018-10-08 15:33:59</option><option value="2018-10-10 13:09:59">2018-10-10 13:09:59</option><option value="2018-10-15 06:04:59">2018-10-15 06:04:59</option><option value="2018-10-15 06:48:59">2018-10-15 06:48:59</option><option value="2018-10-17 14:12:59">2018-10-17 14:12:59</option><option value="2018-10-21 13:54:59">2018-10-21 13:54:59</option><option value="2018-10-23 21:12:59">2018-10-23 21:12:59</option><option value="2018-10-24 05:38:59">2018-10-24 05:38:59</option><option value="2018-11-04 17:35:59">2018-11-04 17:35:59</option><option value="2018-11-04 18:08:59">2018-11-04 18:08:59</option><option value="2018-11-04 19:10:59">2018-11-04 19:10:59</option><option value="2018-11-06 15:49:59">2018-11-06 15:49:59</option><option value="2018-11-06 22:38:59">2018-11-06 22:38:59</option><option value="2018-11-07 00:16:59">2018-11-07 00:16:59</option><option value="2018-12-13 07:57:59">2018-12-13 07:57:59</option><option value="2018-12-17 16:45:59">2018-12-17 16:45:59</option><option value="2018-12-18 15:05:59">2018-12-18 15:05:59</option><option value="2018-12-19 01:37:59">2018-12-19 01:37:59</option><option value="2018-12-19 11:12:59">2018-12-19 11:12:59</option><option value="2018-12-24 00:51:59">2018-12-24 00:51:59</option><option value="2018-12-24 03:44:59">2018-12-24 03:44:59</option><option value="2018-12-24 05:29:59">2018-12-24 05:29:59</option><option value="2018-12-24 05:46:59">2018-12-24 05:46:59</option><option value="2018-12-24 09:40:59">2018-12-24 09:40:59</option><option value="2019-01-02 21:01:59">2019-01-02 21:01:59</option><option value="2019-01-02 22:37:59">2019-01-02 22:37:59</option><option value="2019-01-05 01:04:59">2019-01-05 01:04:59</option><option value="2019-01-05 18:45:59">2019-01-05 18:45:59</option><option value="2019-01-06 17:17:59">2019-01-06 17:17:59</option><option value="2019-01-08 15:38:59">2019-01-08 15:38:59</option><option value="2019-01-10 05:50:59">2019-01-10 05:50:59</option><option value="2019-01-25 11:21:59">2019-01-25 11:21:59</option><option value="2019-01-28 01:51:59">2019-01-28 01:51:59</option><option value="2019-02-08 08:48:59">2019-02-08 08:48:59</option><option value="2019-02-08 09:11:59">2019-02-08 09:11:59</option><option value="2019-02-08 15:42:59">2019-02-08 15:42:59</option><option value="2019-02-08 15:59:59">2019-02-08 15:59:59</option><option value="2019-02-08 16:40:59">2019-02-08 16:40:59</option><option value="2019-02-10 23:31:59">2019-02-10 23:31:59</option><option value="2019-02-11 08:03:59">2019-02-11 08:03:59</option><option value="2019-02-15 09:55:59">2019-02-15 09:55:59</option><option value="2019-02-17 10:26:59">2019-02-17 10:26:59</option><option value="2019-02-18 01:07:59">2019-02-18 01:07:59</option><option value="2019-02-18 03:53:59">2019-02-18 03:53:59</option><option value="2019-02-18 03:59:59">2019-02-18 03:59:59</option><option value="2019-02-18 12:18:59">2019-02-18 12:18:59</option><option value="2019-02-18 12:52:59">2019-02-18 12:52:59</option><option value="2019-02-18 13:50:59">2019-02-18 13:50:59</option><option value="2019-02-18 13:55:59">2019-02-18 13:55:59</option><option value="2019-02-19 15:20:59">2019-02-19 15:20:59</option><option value="2019-02-19 20:39:59">2019-02-19 20:39:59</option><option value="2019-02-20 16:38:59">2019-02-20 16:38:59</option><option value="2019-02-22 03:15:59">2019-02-22 03:15:59</option><option value="2019-02-23 16:55:59">2019-02-23 16:55:59</option><option value="2019-02-23 17:06:59">2019-02-23 17:06:59</option><option value="2019-02-23 19:20:59">2019-02-23 19:20:59</option><option value="2019-02-24 03:16:59">2019-02-24 03:16:59</option><option value="2019-02-24 06:56:59">2019-02-24 06:56:59</option><option value="2019-02-24 07:15:59">2019-02-24 07:15:59</option><option value="2019-03-05 07:11:59">2019-03-05 07:11:59</option><option value="2019-03-05 16:03:59">2019-03-05 16:03:59</option><option value="2019-03-10 03:36:59">2019-03-10 03:36:59</option><option value="2019-03-11 18:12:59">2019-03-11 18:12:59</option><option value="2019-03-12 10:13:59">2019-03-12 10:13:59</option><option value="2019-03-13 00:14:59">2019-03-13 00:14:59</option><option value="2019-03-14 14:00:59">2019-03-14 14:00:59</option><option value="2019-03-16 01:11:59">2019-03-16 01:11:59</option><option value="2019-03-17 20:48:59">2019-03-17 20:48:59</option><option value="2019-03-18 16:30:59">2019-03-18 16:30:59</option><option value="2019-03-19 16:42:59">2019-03-19 16:42:59</option><option value="2019-03-19 16:50:59">2019-03-19 16:50:59</option><option value="2019-03-20 13:13:59">2019-03-20 13:13:59</option><option value="2019-03-20 15:30:59">2019-03-20 15:30:59</option><option value="2019-03-23 11:52:59">2019-03-23 11:52:59</option><option value="2019-03-27 07:14:59">2019-03-27 07:14:59</option><option value="2019-03-27 19:15:59">2019-03-27 19:15:59</option><option value="2019-03-28 03:43:59">2019-03-28 03:43:59</option><option value="2019-03-29 04:02:59">2019-03-29 04:02:59</option><option value="2019-03-29 15:21:59">2019-03-29 15:21:59</option><option value="2019-03-29 18:06:59">2019-03-29 18:06:59</option><option value="2019-03-29 23:25:59">2019-03-29 23:25:59</option><option value="2019-04-01 22:49:59">2019-04-01 22:49:59</option><option value="2019-04-02 02:22:59">2019-04-02 02:22:59</option><option value="2019-04-02 04:33:59">2019-04-02 04:33:59</option><option value="2019-04-02 04:39:59">2019-04-02 04:39:59</option><option value="2019-04-02 04:51:59">2019-04-02 04:51:59</option><option value="2019-04-02 04:52:59">2019-04-02 04:52:59</option><option value="2019-04-02 04:53:59">2019-04-02 04:53:59</option><option value="2019-04-02 04:54:59">2019-04-02 04:54:59</option><option value="2019-04-02 05:17:59">2019-04-02 05:17:59</option><option value="2019-04-02 12:09:59">2019-04-02 12:09:59</option><option value="2019-04-03 00:26:59">2019-04-03 00:26:59</option><option value="2019-04-03 00:44:59">2019-04-03 00:44:59</option><option value="2019-04-03 18:41:59">2019-04-03 18:41:59</option><option value="2019-04-03 20:13:59">2019-04-03 20:13:59</option><option value="2019-04-08 00:24:59">2019-04-08 00:24:59</option></select></div></div></th><th style="min-width: 162.15px;" data-field="market"><div class="th-inner sortable both">Market</div><div class="fht-cell"><div class="filter-control"><select class="form-control bootstrap-table-filter-control-market" style="width: 100%;" dir="ltr"><option value="" selected="selected"></option><option value="ADAUSDT">ADAUSDT</option><option value="BNBUSDT">BNBUSDT</option><option value="BTCUSDT">BTCUSDT</option><option value="BTTUSDT">BTTUSDT</option><option value="EOSUSDT">EOSUSDT</option><option value="ETCUSDT">ETCUSDT</option><option value="ETHUSDT">ETHUSDT</option><option value="FETUSDT">FETUSDT</option><option value="ICXUSDT">ICXUSDT</option><option value="IOTAUSDT">IOTAUSDT</option><option value="LTCUSDT">LTCUSDT</option><option value="NEOUSDT">NEOUSDT</option><option value="ONGUSDT">ONGUSDT</option><option value="ONTUSDT">ONTUSDT</option><option value="PAXUSDT">PAXUSDT</option><option value="QTUMUSDT">QTUMUSDT</option><option value="TRXUSDT">TRXUSDT</option><option value="VETUSDT">VETUSDT</option><option value="WAVESUSDT">WAVESUSDT</option><option value="XLMUSDT">XLMUSDT</option><option value="XRPUSDT">XRPUSDT</option></select></div></div></th><th style="min-width: 97.7833px;" data-field="gainloss"><div class="th-inner sortable both">Gain</div><div class="fht-cell"><div class="filter-control"><select class="form-control bootstrap-table-filter-control-gainloss" style="width: 100%;" dir="ltr"><option value="" selected="selected"></option><option value="-5.8">-5.8</option><option value="-5.7">-5.7</option><option value="-5.6">-5.6</option><option value="-5.5">-5.5</option><option value="-5.4">-5.4</option><option value="-5.3">-5.3</option><option value="-5.2">-5.2</option><option value="-4.8">-4.8</option><option value="-4.6">-4.6</option><option value="-4.4">-4.4</option><option value="-4.3">-4.3</option><option value="-4.2">-4.2</option><option value="-4.1">-4.1</option><option value="-3.8">-3.8</option><option value="-3.7">-3.7</option><option value="-3.6">-3.6</option><option value="-3.3">-3.3</option><option value="-3.2">-3.2</option><option value="-3.0">-3.0</option><option value="-2.9">-2.9</option><option value="-2.3">-2.3</option><option value="-2.2">-2.2</option><option value="-2.1">-2.1</option><option value="-2.0">-2.0</option><option value="-1.8">-1.8</option><option value="-1.4">-1.4</option><option value="-0.8">-0.8</option><option value="-0.7">-0.7</option><option value="-0.5">-0.5</option><option value="-0.3">-0.3</option><option value="-0.2">-0.2</option><option value="-0.1">-0.1</option><option value="0.0">0.0</option><option value="-0.0">-0.0</option><option value="0.1">0.1</option><option value="0.2">0.2</option><option value="0.3">0.3</option><option value="0.4">0.4</option><option value="0.5">0.5</option><option value="0.6">0.6</option><option value="0.7">0.7</option><option value="0.8">0.8</option><option value="1.4">1.4</option><option value="2.0">2.0</option><option value="2.4">2.4</option><option value="2.5">2.5</option><option value="2.9">2.9</option><option value="3.2">3.2</option><option value="3.4">3.4</option><option value="3.5">3.5</option><option value="3.8">3.8</option><option value="3.9">3.9</option><option value="4.3">4.3</option><option value="4.5">4.5</option><option value="5.0">5.0</option><option value="5.1">5.1</option><option value="5.5">5.5</option><option value="5.6">5.6</option><option value="8.3">8.3</option><option value="8.8">8.8</option><option value="9.1">9.1</option><option value="9.4">9.4</option><option value="9.5">9.5</option><option value="10.4">10.4</option><option value="11.1">11.1</option><option value="12.0">12.0</option><option value="12.8">12.8</option><option value="15.6">15.6</option><option value="17.0">17.0</option><option value="20.4">20.4</option><option value="23.0">23.0</option><option value="23.2">23.2</option><option value="26.3">26.3</option><option value="28.5">28.5</option><option value="28.9">28.9</option><option value="62.3">62.3</option></select></div></div></th><th style="min-width: 127.35px;" data-field="gaintype"><div class="th-inner sortable both">Type</div><div class="fht-cell"><div class="filter-control"><select class="form-control bootstrap-table-filter-control-gaintype" style="width: 100%;" dir="ltr"><option value=""></option><option value="looser" selected="selected">looser</option><option value="secured">secured</option><option value="winner">winner</option></select></div></div></th><th style="min-width: 292.65px;" data-field="strategy"><div class="th-inner sortable both">Strategy</div><div class="fht-cell"><div class="filter-control"><select class="form-control bootstrap-table-filter-control-strategy" style="width: 100%;" dir="ltr"><option value="" selected="selected"></option><option value="CFORK_1DAY/EMA50_1HOUR">CFORK_1DAY/EMA50_1HOUR</option></select></div></div></th><th style="min-width: 228.617px;" data-field="5"><div class="th-inner ">Informations</div><div class="fht-cell"><div class="no-filter-control"></div></div></th><th style="min-width: 1039.38px;" data-field="6"><div class="th-inner ">Chart 1</div><div class="fht-cell"><div class="no-filter-control"></div></div></th><th style="min-width: 1005.98px;" data-field="7"><div class="th-inner ">Chart 2</div><div class="fht-cell"><div class="no-filter-control"></div></div></th></tr></thead></table></div><div class="sticky_anchor_begin"></div><table class="table table-bordered table-hover" data-toggle="table" data-search="true" data-filter-control="true" data-show-search-clear-button="true" data-sticky-header="true">
+    <thead class="sticky-header"><tr><th style="" data-field="datetime"><div class="th-inner sortable both">Datetime</div><div class="fht-cell"><div class="filter-control"><select class="form-control bootstrap-table-filter-control-datetime" style="width: 100%;" dir="ltr"><option value="" selected="selected"></option><option value="2018-01-05 09:00:59">2018-01-05 09:00:59</option><option value="2018-02-14 01:39:59">2018-02-14 01:39:59</option><option value="2018-02-14 15:46:59">2018-02-14 15:46:59</option><option value="2018-02-17 02:31:59">2018-02-17 02:31:59</option><option value="2018-02-20 04:31:59">2018-02-20 04:31:59</option><option value="2018-02-27 08:11:59">2018-02-27 08:11:59</option><option value="2018-03-04 23:51:59">2018-03-04 23:51:59</option><option value="2018-03-13 13:55:59">2018-03-13 13:55:59</option><option value="2018-03-21 04:24:59">2018-03-21 04:24:59</option><option value="2018-03-23 19:56:59">2018-03-23 19:56:59</option><option value="2018-04-12 11:10:59">2018-04-12 11:10:59</option><option value="2018-04-12 11:22:59">2018-04-12 11:22:59</option><option value="2018-04-17 07:06:59">2018-04-17 07:06:59</option><option value="2018-04-19 13:06:59">2018-04-19 13:06:59</option><option value="2018-04-20 10:40:59">2018-04-20 10:40:59</option><option value="2018-04-24 00:32:59">2018-04-24 00:32:59</option><option value="2018-04-24 02:13:59">2018-04-24 02:13:59</option><option value="2018-04-24 04:28:59">2018-04-24 04:28:59</option><option value="2018-04-24 12:37:59">2018-04-24 12:37:59</option><option value="2018-05-03 02:52:59">2018-05-03 02:52:59</option><option value="2018-05-04 21:00:59">2018-05-04 21:00:59</option><option value="2018-05-05 10:12:59">2018-05-05 10:12:59</option><option value="2018-05-06 04:13:59">2018-05-06 04:13:59</option><option value="2018-05-10 02:17:59">2018-05-10 02:17:59</option><option value="2018-05-18 12:19:59">2018-05-18 12:19:59</option><option value="2018-06-01 22:46:59">2018-06-01 22:46:59</option><option value="2018-06-06 07:17:59">2018-06-06 07:17:59</option><option value="2018-07-04 08:20:59">2018-07-04 08:20:59</option><option value="2018-07-15 08:36:59">2018-07-15 08:36:59</option><option value="2018-07-16 09:43:59">2018-07-16 09:43:59</option><option value="2018-07-16 11:20:59">2018-07-16 11:20:59</option><option value="2018-07-16 17:38:59">2018-07-16 17:38:59</option><option value="2018-07-17 17:38:59">2018-07-17 17:38:59</option><option value="2018-07-17 17:40:59">2018-07-17 17:40:59</option><option value="2018-07-17 18:02:59">2018-07-17 18:02:59</option><option value="2018-07-24 04:47:59">2018-07-24 04:47:59</option><option value="2018-07-27 11:59:59">2018-07-27 11:59:59</option><option value="2018-08-26 23:30:59">2018-08-26 23:30:59</option><option value="2018-08-27 04:31:59">2018-08-27 04:31:59</option><option value="2018-08-27 05:55:59">2018-08-27 05:55:59</option><option value="2018-08-27 19:31:59">2018-08-27 19:31:59</option><option value="2018-08-27 19:45:59">2018-08-27 19:45:59</option><option value="2018-08-27 22:55:59">2018-08-27 22:55:59</option><option value="2018-08-28 01:04:59">2018-08-28 01:04:59</option><option value="2018-09-01 00:54:59">2018-09-01 00:54:59</option><option value="2018-09-01 15:01:59">2018-09-01 15:01:59</option><option value="2018-09-01 16:10:59">2018-09-01 16:10:59</option><option value="2018-09-03 15:54:59">2018-09-03 15:54:59</option><option value="2018-09-04 11:06:59">2018-09-04 11:06:59</option><option value="2018-09-20 11:00:59">2018-09-20 11:00:59</option><option value="2018-09-20 22:46:59">2018-09-20 22:46:59</option><option value="2018-09-21 07:18:59">2018-09-21 07:18:59</option><option value="2018-09-22 00:04:59">2018-09-22 00:04:59</option><option value="2018-09-23 09:24:59">2018-09-23 09:24:59</option><option value="2018-09-27 12:41:59">2018-09-27 12:41:59</option><option value="2018-09-28 03:56:59">2018-09-28 03:56:59</option><option value="2018-10-02 20:53:59">2018-10-02 20:53:59</option><option value="2018-10-07 15:30:59">2018-10-07 15:30:59</option><option value="2018-10-08 09:50:59">2018-10-08 09:50:59</option><option value="2018-10-08 12:05:59">2018-10-08 12:05:59</option><option value="2018-10-08 12:38:59">2018-10-08 12:38:59</option><option value="2018-10-08 15:33:59">2018-10-08 15:33:59</option><option value="2018-10-10 13:09:59">2018-10-10 13:09:59</option><option value="2018-10-15 06:04:59">2018-10-15 06:04:59</option><option value="2018-10-15 06:48:59">2018-10-15 06:48:59</option><option value="2018-10-17 14:12:59">2018-10-17 14:12:59</option><option value="2018-10-21 13:54:59">2018-10-21 13:54:59</option><option value="2018-10-23 21:12:59">2018-10-23 21:12:59</option><option value="2018-10-24 05:38:59">2018-10-24 05:38:59</option><option value="2018-11-04 17:35:59">2018-11-04 17:35:59</option><option value="2018-11-04 18:08:59">2018-11-04 18:08:59</option><option value="2018-11-04 19:10:59">2018-11-04 19:10:59</option><option value="2018-11-06 15:49:59">2018-11-06 15:49:59</option><option value="2018-11-06 22:38:59">2018-11-06 22:38:59</option><option value="2018-11-07 00:16:59">2018-11-07 00:16:59</option><option value="2018-12-13 07:57:59">2018-12-13 07:57:59</option><option value="2018-12-17 16:45:59">2018-12-17 16:45:59</option><option value="2018-12-18 15:05:59">2018-12-18 15:05:59</option><option value="2018-12-19 01:37:59">2018-12-19 01:37:59</option><option value="2018-12-19 11:12:59">2018-12-19 11:12:59</option><option value="2018-12-24 00:51:59">2018-12-24 00:51:59</option><option value="2018-12-24 03:44:59">2018-12-24 03:44:59</option><option value="2018-12-24 05:29:59">2018-12-24 05:29:59</option><option value="2018-12-24 05:46:59">2018-12-24 05:46:59</option><option value="2018-12-24 09:40:59">2018-12-24 09:40:59</option><option value="2019-01-02 21:01:59">2019-01-02 21:01:59</option><option value="2019-01-02 22:37:59">2019-01-02 22:37:59</option><option value="2019-01-05 01:04:59">2019-01-05 01:04:59</option><option value="2019-01-05 18:45:59">2019-01-05 18:45:59</option><option value="2019-01-06 17:17:59">2019-01-06 17:17:59</option><option value="2019-01-08 15:38:59">2019-01-08 15:38:59</option><option value="2019-01-10 05:50:59">2019-01-10 05:50:59</option><option value="2019-01-25 11:21:59">2019-01-25 11:21:59</option><option value="2019-01-28 01:51:59">2019-01-28 01:51:59</option><option value="2019-02-08 08:48:59">2019-02-08 08:48:59</option><option value="2019-02-08 09:11:59">2019-02-08 09:11:59</option><option value="2019-02-08 15:42:59">2019-02-08 15:42:59</option><option value="2019-02-08 15:59:59">2019-02-08 15:59:59</option><option value="2019-02-08 16:40:59">2019-02-08 16:40:59</option><option value="2019-02-10 23:31:59">2019-02-10 23:31:59</option><option value="2019-02-11 08:03:59">2019-02-11 08:03:59</option><option value="2019-02-15 09:55:59">2019-02-15 09:55:59</option><option value="2019-02-17 10:26:59">2019-02-17 10:26:59</option><option value="2019-02-18 01:07:59">2019-02-18 01:07:59</option><option value="2019-02-18 03:53:59">2019-02-18 03:53:59</option><option value="2019-02-18 03:59:59">2019-02-18 03:59:59</option><option value="2019-02-18 12:18:59">2019-02-18 12:18:59</option><option value="2019-02-18 12:52:59">2019-02-18 12:52:59</option><option value="2019-02-18 13:50:59">2019-02-18 13:50:59</option><option value="2019-02-18 13:55:59">2019-02-18 13:55:59</option><option value="2019-02-19 15:20:59">2019-02-19 15:20:59</option><option value="2019-02-19 20:39:59">2019-02-19 20:39:59</option><option value="2019-02-20 16:38:59">2019-02-20 16:38:59</option><option value="2019-02-22 03:15:59">2019-02-22 03:15:59</option><option value="2019-02-23 16:55:59">2019-02-23 16:55:59</option><option value="2019-02-23 17:06:59">2019-02-23 17:06:59</option><option value="2019-02-23 19:20:59">2019-02-23 19:20:59</option><option value="2019-02-24 03:16:59">2019-02-24 03:16:59</option><option value="2019-02-24 06:56:59">2019-02-24 06:56:59</option><option value="2019-02-24 07:15:59">2019-02-24 07:15:59</option><option value="2019-03-05 07:11:59">2019-03-05 07:11:59</option><option value="2019-03-05 16:03:59">2019-03-05 16:03:59</option><option value="2019-03-10 03:36:59">2019-03-10 03:36:59</option><option value="2019-03-11 18:12:59">2019-03-11 18:12:59</option><option value="2019-03-12 10:13:59">2019-03-12 10:13:59</option><option value="2019-03-13 00:14:59">2019-03-13 00:14:59</option><option value="2019-03-14 14:00:59">2019-03-14 14:00:59</option><option value="2019-03-16 01:11:59">2019-03-16 01:11:59</option><option value="2019-03-17 20:48:59">2019-03-17 20:48:59</option><option value="2019-03-18 16:30:59">2019-03-18 16:30:59</option><option value="2019-03-19 16:42:59">2019-03-19 16:42:59</option><option value="2019-03-19 16:50:59">2019-03-19 16:50:59</option><option value="2019-03-20 13:13:59">2019-03-20 13:13:59</option><option value="2019-03-20 15:30:59">2019-03-20 15:30:59</option><option value="2019-03-23 11:52:59">2019-03-23 11:52:59</option><option value="2019-03-27 07:14:59">2019-03-27 07:14:59</option><option value="2019-03-27 19:15:59">2019-03-27 19:15:59</option><option value="2019-03-28 03:43:59">2019-03-28 03:43:59</option><option value="2019-03-29 04:02:59">2019-03-29 04:02:59</option><option value="2019-03-29 15:21:59">2019-03-29 15:21:59</option><option value="2019-03-29 18:06:59">2019-03-29 18:06:59</option><option value="2019-03-29 23:25:59">2019-03-29 23:25:59</option><option value="2019-04-01 22:49:59">2019-04-01 22:49:59</option><option value="2019-04-02 02:22:59">2019-04-02 02:22:59</option><option value="2019-04-02 04:33:59">2019-04-02 04:33:59</option><option value="2019-04-02 04:39:59">2019-04-02 04:39:59</option><option value="2019-04-02 04:51:59">2019-04-02 04:51:59</option><option value="2019-04-02 04:52:59">2019-04-02 04:52:59</option><option value="2019-04-02 04:53:59">2019-04-02 04:53:59</option><option value="2019-04-02 04:54:59">2019-04-02 04:54:59</option><option value="2019-04-02 05:17:59">2019-04-02 05:17:59</option><option value="2019-04-02 12:09:59">2019-04-02 12:09:59</option><option value="2019-04-03 00:26:59">2019-04-03 00:26:59</option><option value="2019-04-03 00:44:59">2019-04-03 00:44:59</option><option value="2019-04-03 18:41:59">2019-04-03 18:41:59</option><option value="2019-04-03 20:13:59">2019-04-03 20:13:59</option><option value="2019-04-08 00:24:59">2019-04-08 00:24:59</option></select></div></div></th><th style="" data-field="market"><div class="th-inner sortable both">Market</div><div class="fht-cell"><div class="filter-control"><select class="form-control bootstrap-table-filter-control-market" style="width: 100%;" dir="ltr"><option value="" selected="selected"></option><option value="ADAUSDT">ADAUSDT</option><option value="BNBUSDT">BNBUSDT</option><option value="BTCUSDT">BTCUSDT</option><option value="BTTUSDT">BTTUSDT</option><option value="EOSUSDT">EOSUSDT</option><option value="ETCUSDT">ETCUSDT</option><option value="ETHUSDT">ETHUSDT</option><option value="FETUSDT">FETUSDT</option><option value="ICXUSDT">ICXUSDT</option><option value="IOTAUSDT">IOTAUSDT</option><option value="LTCUSDT">LTCUSDT</option><option value="NEOUSDT">NEOUSDT</option><option value="ONGUSDT">ONGUSDT</option><option value="ONTUSDT">ONTUSDT</option><option value="PAXUSDT">PAXUSDT</option><option value="QTUMUSDT">QTUMUSDT</option><option value="TRXUSDT">TRXUSDT</option><option value="VETUSDT">VETUSDT</option><option value="WAVESUSDT">WAVESUSDT</option><option value="XLMUSDT">XLMUSDT</option><option value="XRPUSDT">XRPUSDT</option></select></div></div></th><th style="" data-field="gainloss"><div class="th-inner sortable both">Gain</div><div class="fht-cell"><div class="filter-control"><select class="form-control bootstrap-table-filter-control-gainloss" style="width: 100%;" dir="ltr"><option value="" selected="selected"></option><option value="-5.8">-5.8</option><option value="-5.7">-5.7</option><option value="-5.6">-5.6</option><option value="-5.5">-5.5</option><option value="-5.4">-5.4</option><option value="-5.3">-5.3</option><option value="-5.2">-5.2</option><option value="-4.8">-4.8</option><option value="-4.6">-4.6</option><option value="-4.4">-4.4</option><option value="-4.3">-4.3</option><option value="-4.2">-4.2</option><option value="-4.1">-4.1</option><option value="-3.8">-3.8</option><option value="-3.7">-3.7</option><option value="-3.6">-3.6</option><option value="-3.3">-3.3</option><option value="-3.2">-3.2</option><option value="-3.0">-3.0</option><option value="-2.9">-2.9</option><option value="-2.3">-2.3</option><option value="-2.2">-2.2</option><option value="-2.1">-2.1</option><option value="-2.0">-2.0</option><option value="-1.8">-1.8</option><option value="-1.4">-1.4</option><option value="-0.8">-0.8</option><option value="-0.7">-0.7</option><option value="-0.5">-0.5</option><option value="-0.3">-0.3</option><option value="-0.2">-0.2</option><option value="-0.1">-0.1</option><option value="0.0">0.0</option><option value="-0.0">-0.0</option><option value="0.1">0.1</option><option value="0.2">0.2</option><option value="0.3">0.3</option><option value="0.4">0.4</option><option value="0.5">0.5</option><option value="0.6">0.6</option><option value="0.7">0.7</option><option value="0.8">0.8</option><option value="1.4">1.4</option><option value="2.0">2.0</option><option value="2.4">2.4</option><option value="2.5">2.5</option><option value="2.9">2.9</option><option value="3.2">3.2</option><option value="3.4">3.4</option><option value="3.5">3.5</option><option value="3.8">3.8</option><option value="3.9">3.9</option><option value="4.3">4.3</option><option value="4.5">4.5</option><option value="5.0">5.0</option><option value="5.1">5.1</option><option value="5.5">5.5</option><option value="5.6">5.6</option><option value="8.3">8.3</option><option value="8.8">8.8</option><option value="9.1">9.1</option><option value="9.4">9.4</option><option value="9.5">9.5</option><option value="10.4">10.4</option><option value="11.1">11.1</option><option value="12.0">12.0</option><option value="12.8">12.8</option><option value="15.6">15.6</option><option value="17.0">17.0</option><option value="20.4">20.4</option><option value="23.0">23.0</option><option value="23.2">23.2</option><option value="26.3">26.3</option><option value="28.5">28.5</option><option value="28.9">28.9</option><option value="62.3">62.3</option></select></div></div></th><th style="" data-field="gaintype"><div class="th-inner sortable both">Type</div><div class="fht-cell"><div class="filter-control"><select class="form-control bootstrap-table-filter-control-gaintype" style="width: 100%;" dir="ltr"><option value=""></option><option value="looser" selected="selected">looser</option><option value="secured">secured</option><option value="winner">winner</option></select></div></div></th><th style="" data-field="strategy"><div class="th-inner sortable both">Strategy</div><div class="fht-cell"><div class="filter-control"><select class="form-control bootstrap-table-filter-control-strategy" style="width: 100%;" dir="ltr"><option value="" selected="selected"></option><option value="CFORK_1DAY/EMA50_1HOUR">CFORK_1DAY/EMA50_1HOUR</option></select></div></div></th><th style="" data-field="5"><div class="th-inner ">Informations</div><div class="fht-cell"><div class="no-filter-control"></div></div></th><th style="" data-field="6"><div class="th-inner ">Chart 1</div><div class="fht-cell"><div class="no-filter-control"></div></div></th><th style="" data-field="7"><div class="th-inner ">Chart 2</div><div class="fht-cell"><div class="no-filter-control"></div></div></th></tr></thead>
+    
+      <tbody><tr data-index="0"><td>2018-02-27 08:11:59</td><td>BNBUSDT</td><td>-5.3</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=457.81</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_004.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BNBUSDT_CFORK_1DAY_EMA50_1HOUR_2a9fa259-8e1c-43ac-a84a-b2e21cdc7a28.png" style="width: 929px; height: 570px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BNBUSDT_CFORK_1DAY_EMA50_1HOUR_2a9fa259-8e1c-43ac-a84a-b2e21cdc7a28.png" width="929" height="570" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_094.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BNBUSDT_CFORK_1DAY_EMA50_1HOUR_2a9fa259-8e1c-43ac-a84a-b2e21cdc7a28_zoom.png" style="width: 929px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BNBUSDT_CFORK_1DAY_EMA50_1HOUR_2a9fa259-8e1c-43ac-a84a-b2e21cdc7a28_zoom.png" width="929" height="606" />
+          </a>
+          --></td></tr><tr data-index="1"><td>2018-03-04 23:51:59</td><td>BTCUSDT</td><td>-1.4</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=448.11</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_019.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BTCUSDT_CFORK_1DAY_EMA50_1HOUR_e9c7f75e-ed57-4be5-a8c9-4c9c91385eb2.png" style="width: 961px; height: 601px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BTCUSDT_CFORK_1DAY_EMA50_1HOUR_e9c7f75e-ed57-4be5-a8c9-4c9c91385eb2.png" width="961" height="601" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_124.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BTCUSDT_CFORK_1DAY_EMA50_1HOUR_e9c7f75e-ed57-4be5-a8c9-4c9c91385eb2_zoom.png" style="width: 919px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BTCUSDT_CFORK_1DAY_EMA50_1HOUR_e9c7f75e-ed57-4be5-a8c9-4c9c91385eb2_zoom.png" width="919" height="606" />
+          </a>
+          --></td></tr><tr data-index="2"><td>2018-03-13 13:55:59</td><td>BNBUSDT</td><td>-5.4</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=445.63</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_095.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BNBUSDT_CFORK_1DAY_EMA50_1HOUR_adae107f-8106-4cd3-8aff-c52700267a7e.png" style="width: 929px; height: 570px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BNBUSDT_CFORK_1DAY_EMA50_1HOUR_adae107f-8106-4cd3-8aff-c52700267a7e.png" width="929" height="570" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_062.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BNBUSDT_CFORK_1DAY_EMA50_1HOUR_adae107f-8106-4cd3-8aff-c52700267a7e_zoom.png" style="width: 938px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BNBUSDT_CFORK_1DAY_EMA50_1HOUR_adae107f-8106-4cd3-8aff-c52700267a7e_zoom.png" width="938" height="606" />
+          </a>
+          --></td></tr><tr data-index="3"><td>2018-03-21 04:24:59</td><td>LTCUSDT</td><td>-5.4</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=435.97</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_020.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_1b9748d3-2a18-48a2-85d6-4c9cc3eafce1.png" style="width: 961px; height: 570px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_1b9748d3-2a18-48a2-85d6-4c9cc3eafce1.png" width="961" height="570" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_079.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_1b9748d3-2a18-48a2-85d6-4c9cc3eafce1_zoom.png" style="width: 919px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_1b9748d3-2a18-48a2-85d6-4c9cc3eafce1_zoom.png" width="919" height="606" />
+          </a>
+          --></td></tr><tr data-index="4"><td>2018-04-17 07:06:59</td><td>LTCUSDT</td><td>-3.0</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=448.98</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_002.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_e359d294-49f9-4297-a980-71db00264745.png" style="width: 961px; height: 570px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_e359d294-49f9-4297-a980-71db00264745.png" width="961" height="570" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_037.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_e359d294-49f9-4297-a980-71db00264745_zoom.png" style="width: 919px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_e359d294-49f9-4297-a980-71db00264745_zoom.png" width="919" height="606" />
+          </a>
+          --></td></tr><tr data-index="5"><td>2018-04-24 12:37:59</td><td>NEOUSDT</td><td>-5.2</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=449.33</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_061.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_NEOUSDT_CFORK_1DAY_EMA50_1HOUR_d096ccbf-ccb8-42b8-9430-a178eb063a90.png" style="width: 970px; height: 572px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_NEOUSDT_CFORK_1DAY_EMA50_1HOUR_d096ccbf-ccb8-42b8-9430-a178eb063a90.png" width="970" height="572" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_097.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_NEOUSDT_CFORK_1DAY_EMA50_1HOUR_d096ccbf-ccb8-42b8-9430-a178eb063a90_zoom.png" style="width: 929px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_NEOUSDT_CFORK_1DAY_EMA50_1HOUR_d096ccbf-ccb8-42b8-9430-a178eb063a90_zoom.png" width="929" height="606" />
+          </a>
+          --></td></tr><tr data-index="6"><td>2018-05-05 10:12:59</td><td>BTCUSDT</td><td>-2.1</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=478.56</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_064.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BTCUSDT_CFORK_1DAY_EMA50_1HOUR_c36a538d-b24a-403c-b80a-3f29757d8b92.png" style="width: 952px; height: 572px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BTCUSDT_CFORK_1DAY_EMA50_1HOUR_c36a538d-b24a-403c-b80a-3f29757d8b92.png" width="952" height="572" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_119.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BTCUSDT_CFORK_1DAY_EMA50_1HOUR_c36a538d-b24a-403c-b80a-3f29757d8b92_zoom.png" style="width: 919px; height: 608px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BTCUSDT_CFORK_1DAY_EMA50_1HOUR_c36a538d-b24a-403c-b80a-3f29757d8b92_zoom.png" width="919" height="608" />
+          </a>
+          --></td></tr><tr data-index="7"><td>2018-05-06 04:13:59</td><td>BNBUSDT</td><td>-2.9</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=478.57</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_016.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BNBUSDT_CFORK_1DAY_EMA50_1HOUR_5af01dc4-0768-4349-8633-3df8edc2bb64.png" style="width: 970px; height: 572px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BNBUSDT_CFORK_1DAY_EMA50_1HOUR_5af01dc4-0768-4349-8633-3df8edc2bb64.png" width="970" height="572" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_023.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BNBUSDT_CFORK_1DAY_EMA50_1HOUR_5af01dc4-0768-4349-8633-3df8edc2bb64_zoom.png" style="width: 929px; height: 608px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BNBUSDT_CFORK_1DAY_EMA50_1HOUR_5af01dc4-0768-4349-8633-3df8edc2bb64_zoom.png" width="929" height="608" />
+          </a>
+          --></td></tr><tr data-index="8"><td>2018-05-10 02:17:59</td><td>BNBUSDT</td><td>-5.3</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=494.98</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_112.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BNBUSDT_CFORK_1DAY_EMA50_1HOUR_68f502e8-45dd-4394-a02e-d74c70578bb6.png" style="width: 970px; height: 572px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BNBUSDT_CFORK_1DAY_EMA50_1HOUR_68f502e8-45dd-4394-a02e-d74c70578bb6.png" width="970" height="572" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_044.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BNBUSDT_CFORK_1DAY_EMA50_1HOUR_68f502e8-45dd-4394-a02e-d74c70578bb6_zoom.png" style="width: 929px; height: 608px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BNBUSDT_CFORK_1DAY_EMA50_1HOUR_68f502e8-45dd-4394-a02e-d74c70578bb6_zoom.png" width="929" height="608" />
+          </a>
+          --></td></tr><tr data-index="9"><td>2018-07-04 08:20:59</td><td>NEOUSDT</td><td>-5.6</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=487.18</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_029.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_NEOUSDT_CFORK_1DAY_EMA50_1HOUR_9a12313c-8995-45d0-ad75-5a8124cb9976.png" style="width: 970px; height: 572px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_NEOUSDT_CFORK_1DAY_EMA50_1HOUR_9a12313c-8995-45d0-ad75-5a8124cb9976.png" width="970" height="572" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_083.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_NEOUSDT_CFORK_1DAY_EMA50_1HOUR_9a12313c-8995-45d0-ad75-5a8124cb9976_zoom.png" style="width: 928px; height: 608px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_NEOUSDT_CFORK_1DAY_EMA50_1HOUR_9a12313c-8995-45d0-ad75-5a8124cb9976_zoom.png" width="928" height="608" />
+          </a>
+          --></td></tr><tr data-index="10"><td>2018-07-17 18:02:59</td><td>BNBUSDT</td><td>-3.8</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=477.56</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_013.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BNBUSDT_CFORK_1DAY_EMA50_1HOUR_f2a9f80c-2941-43f7-bd0e-c18a62858e80.png" style="width: 970px; height: 568px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BNBUSDT_CFORK_1DAY_EMA50_1HOUR_f2a9f80c-2941-43f7-bd0e-c18a62858e80.png" width="970" height="568" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_021.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BNBUSDT_CFORK_1DAY_EMA50_1HOUR_f2a9f80c-2941-43f7-bd0e-c18a62858e80_zoom.png" style="width: 938px; height: 604px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BNBUSDT_CFORK_1DAY_EMA50_1HOUR_f2a9f80c-2941-43f7-bd0e-c18a62858e80_zoom.png" width="938" height="604" />
+          </a>
+          --></td></tr><tr data-index="11"><td>2018-07-17 18:02:59</td><td>NEOUSDT</td><td>-4.1</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=477.54</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_014.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_NEOUSDT_CFORK_1DAY_EMA50_1HOUR_c44dc408-e9b4-4546-9296-b7c5d648b133.png" style="width: 970px; height: 572px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_NEOUSDT_CFORK_1DAY_EMA50_1HOUR_c44dc408-e9b4-4546-9296-b7c5d648b133.png" width="970" height="572" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_047.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_NEOUSDT_CFORK_1DAY_EMA50_1HOUR_c44dc408-e9b4-4546-9296-b7c5d648b133_zoom.png" style="width: 928px; height: 604px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_NEOUSDT_CFORK_1DAY_EMA50_1HOUR_c44dc408-e9b4-4546-9296-b7c5d648b133_zoom.png" width="928" height="604" />
+          </a>
+          --></td></tr><tr data-index="12"><td>2018-08-28 01:04:59</td><td>XRPUSDT</td><td>-0.7</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=573.11</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_048.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_XRPUSDT_CFORK_1DAY_EMA50_1HOUR_a8a3a89f-fd24-4fb8-a9ec-02a93290063d.png" style="width: 938px; height: 571px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_XRPUSDT_CFORK_1DAY_EMA50_1HOUR_a8a3a89f-fd24-4fb8-a9ec-02a93290063d.png" width="938" height="571" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_116.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_XRPUSDT_CFORK_1DAY_EMA50_1HOUR_a8a3a89f-fd24-4fb8-a9ec-02a93290063d_zoom.png" style="width: 905px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_XRPUSDT_CFORK_1DAY_EMA50_1HOUR_a8a3a89f-fd24-4fb8-a9ec-02a93290063d_zoom.png" width="905" height="606" />
+          </a>
+          --></td></tr><tr data-index="13"><td>2018-09-01 16:10:59</td><td>ICXUSDT</td><td>-5.2</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=687.46</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_058.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ICXUSDT_CFORK_1DAY_EMA50_1HOUR_aec36d68-1b13-41d5-96d0-44dec7d1ac33.png" style="width: 929px; height: 571px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ICXUSDT_CFORK_1DAY_EMA50_1HOUR_aec36d68-1b13-41d5-96d0-44dec7d1ac33.png" width="929" height="571" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_099.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ICXUSDT_CFORK_1DAY_EMA50_1HOUR_aec36d68-1b13-41d5-96d0-44dec7d1ac33_zoom.png" style="width: 938px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ICXUSDT_CFORK_1DAY_EMA50_1HOUR_aec36d68-1b13-41d5-96d0-44dec7d1ac33_zoom.png" width="938" height="606" />
+          </a>
+          --></td></tr><tr data-index="14"><td>2018-09-01 15:01:59</td><td>ETHUSDT</td><td>-2.3</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=687.45</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_050.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ETHUSDT_CFORK_1DAY_EMA50_1HOUR_20d4c4a7-a932-4f6a-8248-fed9fa05eb15.png" style="width: 961px; height: 571px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ETHUSDT_CFORK_1DAY_EMA50_1HOUR_20d4c4a7-a932-4f6a-8248-fed9fa05eb15.png" width="961" height="571" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_076.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ETHUSDT_CFORK_1DAY_EMA50_1HOUR_20d4c4a7-a932-4f6a-8248-fed9fa05eb15_zoom.png" style="width: 919px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ETHUSDT_CFORK_1DAY_EMA50_1HOUR_20d4c4a7-a932-4f6a-8248-fed9fa05eb15_zoom.png" width="919" height="606" />
+          </a>
+          --></td></tr><tr data-index="15"><td>2018-09-03 15:54:59</td><td>ETCUSDT</td><td>-3.6</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=666.60</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_022.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ETCUSDT_CFORK_1DAY_EMA50_1HOUR_47b604e8-5fad-47f3-a477-789cd0323eac.png" style="width: 970px; height: 571px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ETCUSDT_CFORK_1DAY_EMA50_1HOUR_47b604e8-5fad-47f3-a477-789cd0323eac.png" width="970" height="571" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_085.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ETCUSDT_CFORK_1DAY_EMA50_1HOUR_47b604e8-5fad-47f3-a477-789cd0323eac_zoom.png" style="width: 929px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ETCUSDT_CFORK_1DAY_EMA50_1HOUR_47b604e8-5fad-47f3-a477-789cd0323eac_zoom.png" width="929" height="606" />
+          </a>
+          --></td></tr><tr data-index="16"><td>2018-09-04 11:06:59</td><td>LTCUSDT</td><td>-5.4</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=666.66</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_090.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_7fbb1386-0577-406e-adff-9b30d4b5e160.png" style="width: 961px; height: 571px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_7fbb1386-0577-406e-adff-9b30d4b5e160.png" width="961" height="571" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_096.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_7fbb1386-0577-406e-adff-9b30d4b5e160_zoom.png" style="width: 919px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_7fbb1386-0577-406e-adff-9b30d4b5e160_zoom.png" width="919" height="606" />
+          </a>
+          --></td></tr><tr data-index="17"><td>2018-09-21 07:18:59</td><td>QTUMUSDT</td><td>-5.6</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=642.61</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_070.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_QTUMUSDT_CFORK_1DAY_EMA50_1HOUR_7d52588f-32c1-4cf7-a680-253a1a98dcd4.png" style="width: 970px; height: 570px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_QTUMUSDT_CFORK_1DAY_EMA50_1HOUR_7d52588f-32c1-4cf7-a680-253a1a98dcd4.png" width="970" height="570" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_084.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_QTUMUSDT_CFORK_1DAY_EMA50_1HOUR_7d52588f-32c1-4cf7-a680-253a1a98dcd4_zoom.png" style="width: 929px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_QTUMUSDT_CFORK_1DAY_EMA50_1HOUR_7d52588f-32c1-4cf7-a680-253a1a98dcd4_zoom.png" width="929" height="606" />
+          </a>
+          --></td></tr><tr data-index="18"><td>2018-09-22 00:04:59</td><td>ONTUSDT</td><td>-5.5</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=629.78</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_081.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ONTUSDT_CFORK_1DAY_EMA50_1HOUR_7449c599-0f0f-4892-882e-e811a6243aba.png" style="width: 915px; height: 570px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ONTUSDT_CFORK_1DAY_EMA50_1HOUR_7449c599-0f0f-4892-882e-e811a6243aba.png" width="915" height="570" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_040.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ONTUSDT_CFORK_1DAY_EMA50_1HOUR_7449c599-0f0f-4892-882e-e811a6243aba_zoom.png" style="width: 938px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ONTUSDT_CFORK_1DAY_EMA50_1HOUR_7449c599-0f0f-4892-882e-e811a6243aba_zoom.png" width="938" height="606" />
+          </a>
+          --></td></tr><tr data-index="19"><td>2018-09-23 09:24:59</td><td>LTCUSDT</td><td>-4.2</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=615.87</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_038.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_4a01142d-47c5-410c-bda3-6851594c2398.png" style="width: 961px; height: 570px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_4a01142d-47c5-410c-bda3-6851594c2398.png" width="961" height="570" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_115.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_4a01142d-47c5-410c-bda3-6851594c2398_zoom.png" style="width: 919px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_4a01142d-47c5-410c-bda3-6851594c2398_zoom.png" width="919" height="606" />
+          </a>
+          --></td></tr><tr data-index="20"><td>2018-09-28 03:56:59</td><td>NEOUSDT</td><td>-5.3</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=765.90</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_107.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_NEOUSDT_CFORK_1DAY_EMA50_1HOUR_d78cc9f0-bcef-4b78-a75d-47e424ef8bc4.png" style="width: 970px; height: 570px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_NEOUSDT_CFORK_1DAY_EMA50_1HOUR_d78cc9f0-bcef-4b78-a75d-47e424ef8bc4.png" width="970" height="570" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_077.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_NEOUSDT_CFORK_1DAY_EMA50_1HOUR_d78cc9f0-bcef-4b78-a75d-47e424ef8bc4_zoom.png" style="width: 929px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_NEOUSDT_CFORK_1DAY_EMA50_1HOUR_d78cc9f0-bcef-4b78-a75d-47e424ef8bc4_zoom.png" width="929" height="606" />
+          </a>
+          --></td></tr><tr data-index="21"><td>2018-09-27 12:41:59</td><td>LTCUSDT</td><td>-4.6</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=765.90</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_031.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_d605d541-846c-4899-aeac-42871cddf6ed.png" style="width: 961px; height: 570px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_d605d541-846c-4899-aeac-42871cddf6ed.png" width="961" height="570" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_011.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_d605d541-846c-4899-aeac-42871cddf6ed_zoom.png" style="width: 928px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_d605d541-846c-4899-aeac-42871cddf6ed_zoom.png" width="928" height="606" />
+          </a>
+          --></td></tr><tr data-index="22"><td>2018-10-08 12:38:59</td><td>VETUSDT</td><td>-0.1</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=739.93</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_109.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_VETUSDT_CFORK_1DAY_EMA50_1HOUR_d328af61-f5e1-4d04-9165-7c0e84035519.png" style="width: 956px; height: 570px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_VETUSDT_CFORK_1DAY_EMA50_1HOUR_d328af61-f5e1-4d04-9165-7c0e84035519.png" width="956" height="570" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_078.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_VETUSDT_CFORK_1DAY_EMA50_1HOUR_d328af61-f5e1-4d04-9165-7c0e84035519_zoom.png" style="width: 924px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_VETUSDT_CFORK_1DAY_EMA50_1HOUR_d328af61-f5e1-4d04-9165-7c0e84035519_zoom.png" width="924" height="606" />
+          </a>
+          --></td></tr><tr data-index="23"><td>2018-10-08 15:33:59</td><td>EOSUSDT</td><td>-1.8</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=739.89</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_065.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_EOSUSDT_CFORK_1DAY_EMA50_1HOUR_ad1f7164-ab6f-4a84-93fb-16086e86b69e.png" style="width: 929px; height: 570px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_EOSUSDT_CFORK_1DAY_EMA50_1HOUR_ad1f7164-ab6f-4a84-93fb-16086e86b69e.png" width="929" height="570" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_049.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_EOSUSDT_CFORK_1DAY_EMA50_1HOUR_ad1f7164-ab6f-4a84-93fb-16086e86b69e_zoom.png" style="width: 938px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_EOSUSDT_CFORK_1DAY_EMA50_1HOUR_ad1f7164-ab6f-4a84-93fb-16086e86b69e_zoom.png" width="938" height="606" />
+          </a>
+          --></td></tr><tr data-index="24"><td>2018-10-15 06:04:59</td><td>ETHUSDT</td><td>-5.3</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=739.57</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_036.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ETHUSDT_CFORK_1DAY_EMA50_1HOUR_a9bc3776-846d-4d0a-823f-6521d0f51a02.png" style="width: 970px; height: 570px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ETHUSDT_CFORK_1DAY_EMA50_1HOUR_a9bc3776-846d-4d0a-823f-6521d0f51a02.png" width="970" height="570" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_053.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ETHUSDT_CFORK_1DAY_EMA50_1HOUR_a9bc3776-846d-4d0a-823f-6521d0f51a02_zoom.png" style="width: 928px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ETHUSDT_CFORK_1DAY_EMA50_1HOUR_a9bc3776-846d-4d0a-823f-6521d0f51a02_zoom.png" width="928" height="606" />
+          </a>
+          --></td></tr><tr data-index="25"><td>2018-10-15 06:48:59</td><td>LTCUSDT</td><td>-5.4</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=723.79</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_017.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_59c374e6-3a97-4b01-a4a6-4a700f1ac8c2.png" style="width: 961px; height: 570px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_59c374e6-3a97-4b01-a4a6-4a700f1ac8c2.png" width="961" height="570" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_067.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_59c374e6-3a97-4b01-a4a6-4a700f1ac8c2_zoom.png" style="width: 928px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_59c374e6-3a97-4b01-a4a6-4a700f1ac8c2_zoom.png" width="928" height="606" />
+          </a>
+          --></td></tr><tr data-index="26"><td>2018-10-17 14:12:59</td><td>QTUMUSDT</td><td>-0.8</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=709.77</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_089.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_QTUMUSDT_CFORK_1DAY_EMA50_1HOUR_7bae63cd-fac6-4f0b-8bd1-f91cf4f610c9.png" style="width: 970px; height: 570px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_QTUMUSDT_CFORK_1DAY_EMA50_1HOUR_7bae63cd-fac6-4f0b-8bd1-f91cf4f610c9.png" width="970" height="570" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_005.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_QTUMUSDT_CFORK_1DAY_EMA50_1HOUR_7bae63cd-fac6-4f0b-8bd1-f91cf4f610c9_zoom.png" style="width: 929px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_QTUMUSDT_CFORK_1DAY_EMA50_1HOUR_7bae63cd-fac6-4f0b-8bd1-f91cf4f610c9_zoom.png" width="929" height="606" />
+          </a>
+          --></td></tr><tr data-index="27"><td>2018-10-24 05:38:59</td><td>IOTAUSDT</td><td>-1.4</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=709.01</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_057.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_IOTAUSDT_CFORK_1DAY_EMA50_1HOUR_92d09290-adbb-4d76-b20c-e05b7f46c4f9.png" style="width: 929px; height: 570px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_IOTAUSDT_CFORK_1DAY_EMA50_1HOUR_92d09290-adbb-4d76-b20c-e05b7f46c4f9.png" width="929" height="570" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_060.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_IOTAUSDT_CFORK_1DAY_EMA50_1HOUR_92d09290-adbb-4d76-b20c-e05b7f46c4f9_zoom.png" style="width: 938px; height: 604px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_IOTAUSDT_CFORK_1DAY_EMA50_1HOUR_92d09290-adbb-4d76-b20c-e05b7f46c4f9_zoom.png" width="938" height="604" />
+          </a>
+          --></td></tr><tr data-index="28"><td>2018-10-23 21:12:59</td><td>XRPUSDT</td><td>-4.3</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=709.01</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_105.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_XRPUSDT_CFORK_1DAY_EMA50_1HOUR_05d88447-d7fa-4eff-865a-a739c7a81b9f.png" style="width: 929px; height: 570px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_XRPUSDT_CFORK_1DAY_EMA50_1HOUR_05d88447-d7fa-4eff-865a-a739c7a81b9f.png" width="929" height="570" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_108.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_XRPUSDT_CFORK_1DAY_EMA50_1HOUR_05d88447-d7fa-4eff-865a-a739c7a81b9f_zoom.png" style="width: 896px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_XRPUSDT_CFORK_1DAY_EMA50_1HOUR_05d88447-d7fa-4eff-865a-a739c7a81b9f_zoom.png" width="896" height="606" />
+          </a>
+          --></td></tr><tr data-index="29"><td>2018-11-04 19:10:59</td><td>VETUSDT</td><td>-5.3</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=693.89</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_025.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_VETUSDT_CFORK_1DAY_EMA50_1HOUR_93bda618-769a-42e7-aac8-959c91ebb3bd.png" style="width: 956px; height: 571px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_VETUSDT_CFORK_1DAY_EMA50_1HOUR_93bda618-769a-42e7-aac8-959c91ebb3bd.png" width="956" height="571" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_087.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_VETUSDT_CFORK_1DAY_EMA50_1HOUR_93bda618-769a-42e7-aac8-959c91ebb3bd_zoom.png" style="width: 924px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_VETUSDT_CFORK_1DAY_EMA50_1HOUR_93bda618-769a-42e7-aac8-959c91ebb3bd_zoom.png" width="924" height="606" />
+          </a>
+          --></td></tr><tr data-index="30"><td>2018-11-07 00:16:59</td><td>NEOUSDT</td><td>-5.2</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=683.30</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_068.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_NEOUSDT_CFORK_1DAY_EMA50_1HOUR_04fb97c2-f3b6-4eb9-9c02-11c2ff6a503a.png" style="width: 970px; height: 571px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_NEOUSDT_CFORK_1DAY_EMA50_1HOUR_04fb97c2-f3b6-4eb9-9c02-11c2ff6a503a.png" width="970" height="571" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_117.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_NEOUSDT_CFORK_1DAY_EMA50_1HOUR_04fb97c2-f3b6-4eb9-9c02-11c2ff6a503a_zoom.png" style="width: 928px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_NEOUSDT_CFORK_1DAY_EMA50_1HOUR_04fb97c2-f3b6-4eb9-9c02-11c2ff6a503a_zoom.png" width="928" height="606" />
+          </a>
+          --></td></tr><tr data-index="31"><td>2018-11-06 22:38:59</td><td>ADAUSDT</td><td>-3.2</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=681.47</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_073.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ADAUSDT_CFORK_1DAY_EMA50_1HOUR_c6767f55-b411-4d0e-99b0-4b8814756922.png" style="width: 938px; height: 570px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ADAUSDT_CFORK_1DAY_EMA50_1HOUR_c6767f55-b411-4d0e-99b0-4b8814756922.png" width="938" height="570" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_030.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ADAUSDT_CFORK_1DAY_EMA50_1HOUR_c6767f55-b411-4d0e-99b0-4b8814756922_zoom.png" style="width: 905px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ADAUSDT_CFORK_1DAY_EMA50_1HOUR_c6767f55-b411-4d0e-99b0-4b8814756922_zoom.png" width="905" height="606" />
+          </a>
+          --></td></tr><tr data-index="32"><td>2018-12-19 01:37:59</td><td>LTCUSDT</td><td>-5.3</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=663.78</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_043.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_58d4c575-8713-47cc-b10e-9074330c4d0b.png" style="width: 961px; height: 601px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_58d4c575-8713-47cc-b10e-9074330c4d0b.png" width="961" height="601" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_003.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_58d4c575-8713-47cc-b10e-9074330c4d0b_zoom.png" style="width: 928px; height: 607px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_58d4c575-8713-47cc-b10e-9074330c4d0b_zoom.png" width="928" height="607" />
+          </a>
+          --></td></tr><tr data-index="33"><td>2018-12-24 09:40:59</td><td>ONTUSDT</td><td>-5.2</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=654.42</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_088.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ONTUSDT_CFORK_1DAY_EMA50_1HOUR_39ee05ed-af4b-4728-9f6d-1ed55feb4af3.png" style="width: 938px; height: 601px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ONTUSDT_CFORK_1DAY_EMA50_1HOUR_39ee05ed-af4b-4728-9f6d-1ed55feb4af3.png" width="938" height="601" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_056.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ONTUSDT_CFORK_1DAY_EMA50_1HOUR_39ee05ed-af4b-4728-9f6d-1ed55feb4af3_zoom.png" style="width: 938px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ONTUSDT_CFORK_1DAY_EMA50_1HOUR_39ee05ed-af4b-4728-9f6d-1ed55feb4af3_zoom.png" width="938" height="606" />
+          </a>
+          --></td></tr><tr data-index="34"><td>2018-12-24 05:46:59</td><td>BTCUSDT</td><td>-4.8</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=652.68</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_033.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BTCUSDT_CFORK_1DAY_EMA50_1HOUR_c426ca35-f52e-453f-a7ef-a4a52b15841f.png" style="width: 961px; height: 601px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BTCUSDT_CFORK_1DAY_EMA50_1HOUR_c426ca35-f52e-453f-a7ef-a4a52b15841f.png" width="961" height="601" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_034.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BTCUSDT_CFORK_1DAY_EMA50_1HOUR_c426ca35-f52e-453f-a7ef-a4a52b15841f_zoom.png" style="width: 919px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BTCUSDT_CFORK_1DAY_EMA50_1HOUR_c426ca35-f52e-453f-a7ef-a4a52b15841f_zoom.png" width="919" height="606" />
+          </a>
+          --></td></tr><tr data-index="35"><td>2019-01-02 22:37:59</td><td>ADAUSDT</td><td>-4.4</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=632.54</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_072.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ADAUSDT_CFORK_1DAY_EMA50_1HOUR_fcc97cca-30ea-4222-ba9a-cd73ce0e7f3a.png" style="width: 938px; height: 601px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ADAUSDT_CFORK_1DAY_EMA50_1HOUR_fcc97cca-30ea-4222-ba9a-cd73ce0e7f3a.png" width="938" height="601" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_010.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ADAUSDT_CFORK_1DAY_EMA50_1HOUR_fcc97cca-30ea-4222-ba9a-cd73ce0e7f3a_zoom.png" style="width: 905px; height: 607px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ADAUSDT_CFORK_1DAY_EMA50_1HOUR_fcc97cca-30ea-4222-ba9a-cd73ce0e7f3a_zoom.png" width="905" height="607" />
+          </a>
+          --></td></tr><tr data-index="36"><td>2019-01-02 21:01:59</td><td>ETCUSDT</td><td>-3.7</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=632.52</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_032.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ETCUSDT_CFORK_1DAY_EMA50_1HOUR_2f48ff0a-30bf-47ce-9288-dfbd64bd42c9.png" style="width: 970px; height: 601px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ETCUSDT_CFORK_1DAY_EMA50_1HOUR_2f48ff0a-30bf-47ce-9288-dfbd64bd42c9.png" width="970" height="601" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_012.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ETCUSDT_CFORK_1DAY_EMA50_1HOUR_2f48ff0a-30bf-47ce-9288-dfbd64bd42c9_zoom.png" style="width: 929px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ETCUSDT_CFORK_1DAY_EMA50_1HOUR_2f48ff0a-30bf-47ce-9288-dfbd64bd42c9_zoom.png" width="929" height="606" />
+          </a>
+          --></td></tr><tr data-index="37"><td>2019-01-05 01:04:59</td><td>ETHUSDT</td><td>-5.7</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=611.95</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_098.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ETHUSDT_CFORK_1DAY_EMA50_1HOUR_0c439acb-0686-40aa-8f43-8cb975da84b8.png" style="width: 970px; height: 601px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ETHUSDT_CFORK_1DAY_EMA50_1HOUR_0c439acb-0686-40aa-8f43-8cb975da84b8.png" width="970" height="601" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_075.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ETHUSDT_CFORK_1DAY_EMA50_1HOUR_0c439acb-0686-40aa-8f43-8cb975da84b8_zoom.png" style="width: 928px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ETHUSDT_CFORK_1DAY_EMA50_1HOUR_0c439acb-0686-40aa-8f43-8cb975da84b8_zoom.png" width="928" height="606" />
+          </a>
+          --></td></tr><tr data-index="38"><td>2019-01-08 15:38:59</td><td>LTCUSDT</td><td>-5.4</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=610.36</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_091.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_af6551ad-996b-46b0-bb95-d2000e3f1eb1.png" style="width: 961px; height: 601px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_af6551ad-996b-46b0-bb95-d2000e3f1eb1.png" width="961" height="601" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_069.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_af6551ad-996b-46b0-bb95-d2000e3f1eb1_zoom.png" style="width: 928px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_af6551ad-996b-46b0-bb95-d2000e3f1eb1_zoom.png" width="928" height="606" />
+          </a>
+          --></td></tr><tr data-index="39"><td>2019-01-06 17:17:59</td><td>BTCUSDT</td><td>-0.3</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=598.04</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_123.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BTCUSDT_CFORK_1DAY_EMA50_1HOUR_986dc374-3a3a-4d65-832f-f3a3ac44039e.png" style="width: 952px; height: 601px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BTCUSDT_CFORK_1DAY_EMA50_1HOUR_986dc374-3a3a-4d65-832f-f3a3ac44039e.png" width="952" height="601" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_024.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BTCUSDT_CFORK_1DAY_EMA50_1HOUR_986dc374-3a3a-4d65-832f-f3a3ac44039e_zoom.png" style="width: 910px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BTCUSDT_CFORK_1DAY_EMA50_1HOUR_986dc374-3a3a-4d65-832f-f3a3ac44039e_zoom.png" width="910" height="606" />
+          </a>
+          --></td></tr><tr data-index="40"><td>2019-01-10 05:50:59</td><td>ICXUSDT</td><td>-5.7</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=596.64</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_110.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ICXUSDT_CFORK_1DAY_EMA50_1HOUR_f3001820-1588-4b26-8ec4-b91a563466da.png" style="width: 929px; height: 601px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ICXUSDT_CFORK_1DAY_EMA50_1HOUR_f3001820-1588-4b26-8ec4-b91a563466da.png" width="929" height="601" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_120.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ICXUSDT_CFORK_1DAY_EMA50_1HOUR_f3001820-1588-4b26-8ec4-b91a563466da_zoom.png" style="width: 938px; height: 607px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ICXUSDT_CFORK_1DAY_EMA50_1HOUR_f3001820-1588-4b26-8ec4-b91a563466da_zoom.png" width="938" height="607" />
+          </a>
+          --></td></tr><tr data-index="41"><td>2019-01-25 11:21:59</td><td>EOSUSDT</td><td>-2.1</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=582.97</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_052.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_EOSUSDT_CFORK_1DAY_EMA50_1HOUR_94ae0b2b-4545-41ab-8b11-d6980aae2bbb.png" style="width: 915px; height: 601px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_EOSUSDT_CFORK_1DAY_EMA50_1HOUR_94ae0b2b-4545-41ab-8b11-d6980aae2bbb.png" width="915" height="601" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_046.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_EOSUSDT_CFORK_1DAY_EMA50_1HOUR_94ae0b2b-4545-41ab-8b11-d6980aae2bbb_zoom.png" style="width: 938px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_EOSUSDT_CFORK_1DAY_EMA50_1HOUR_94ae0b2b-4545-41ab-8b11-d6980aae2bbb_zoom.png" width="938" height="606" />
+          </a>
+          --></td></tr><tr data-index="42"><td>2019-01-28 01:51:59</td><td>PAXUSDT</td><td>-0.5</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=578.05</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_080.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_PAXUSDT_CFORK_1DAY_EMA50_1HOUR_88eb56a7-fcee-425e-b569-ea77971aa937.png" style="width: 938px; height: 601px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_PAXUSDT_CFORK_1DAY_EMA50_1HOUR_88eb56a7-fcee-425e-b569-ea77971aa937.png" width="938" height="601" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_101.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_PAXUSDT_CFORK_1DAY_EMA50_1HOUR_88eb56a7-fcee-425e-b569-ea77971aa937_zoom.png" style="width: 938px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_PAXUSDT_CFORK_1DAY_EMA50_1HOUR_88eb56a7-fcee-425e-b569-ea77971aa937_zoom.png" width="938" height="606" />
+          </a>
+          --></td></tr><tr data-index="43"><td>2019-02-10 23:31:59</td><td>ADAUSDT</td><td>-4.2</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=569.54</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_015.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ADAUSDT_CFORK_1DAY_EMA50_1HOUR_7216b369-64b9-470e-82d8-a61c6e38625d.png" style="width: 938px; height: 601px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ADAUSDT_CFORK_1DAY_EMA50_1HOUR_7216b369-64b9-470e-82d8-a61c6e38625d.png" width="938" height="601" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_103.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ADAUSDT_CFORK_1DAY_EMA50_1HOUR_7216b369-64b9-470e-82d8-a61c6e38625d_zoom.png" style="width: 905px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ADAUSDT_CFORK_1DAY_EMA50_1HOUR_7216b369-64b9-470e-82d8-a61c6e38625d_zoom.png" width="905" height="606" />
+          </a>
+          --></td></tr><tr data-index="44"><td>2019-02-11 08:03:59</td><td>BNBUSDT</td><td>-3.0</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=628.93</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_071.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BNBUSDT_CFORK_1DAY_EMA50_1HOUR_d89eb81a-2064-4457-a8db-953455f6f967.png" style="width: 970px; height: 601px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BNBUSDT_CFORK_1DAY_EMA50_1HOUR_d89eb81a-2064-4457-a8db-953455f6f967.png" width="970" height="601" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_027.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BNBUSDT_CFORK_1DAY_EMA50_1HOUR_d89eb81a-2064-4457-a8db-953455f6f967_zoom.png" style="width: 938px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BNBUSDT_CFORK_1DAY_EMA50_1HOUR_d89eb81a-2064-4457-a8db-953455f6f967_zoom.png" width="938" height="606" />
+          </a>
+          --></td></tr><tr data-index="45"><td>2019-02-17 10:26:59</td><td>ICXUSDT</td><td>-5.3</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=655.79</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_102.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ICXUSDT_CFORK_1DAY_EMA50_1HOUR_3d5fbc23-5237-44a6-bc70-79093e219d4c.png" style="width: 929px; height: 570px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ICXUSDT_CFORK_1DAY_EMA50_1HOUR_3d5fbc23-5237-44a6-bc70-79093e219d4c.png" width="929" height="570" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_114.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ICXUSDT_CFORK_1DAY_EMA50_1HOUR_3d5fbc23-5237-44a6-bc70-79093e219d4c_zoom.png" style="width: 938px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ICXUSDT_CFORK_1DAY_EMA50_1HOUR_3d5fbc23-5237-44a6-bc70-79093e219d4c_zoom.png" width="938" height="606" />
+          </a>
+          --></td></tr><tr data-index="46"><td>2019-02-19 20:39:59</td><td>WAVESUSDT</td><td>-5.3</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=647.42</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_WAVESUSDT_CFORK_1DAY_EMA50_1HOUR_490366f8-b05c-4b73-b7eb-102c31a1d812.png" style="width: 970px; height: 570px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_WAVESUSDT_CFORK_1DAY_EMA50_1HOUR_490366f8-b05c-4b73-b7eb-102c31a1d812.png" width="970" height="570" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_092.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_WAVESUSDT_CFORK_1DAY_EMA50_1HOUR_490366f8-b05c-4b73-b7eb-102c31a1d812_zoom.png" style="width: 929px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_WAVESUSDT_CFORK_1DAY_EMA50_1HOUR_490366f8-b05c-4b73-b7eb-102c31a1d812_zoom.png" width="929" height="606" />
+          </a>
+          --></td></tr><tr data-index="47"><td>2019-02-20 16:38:59</td><td>ONTUSDT</td><td>-5.4</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=685.31</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_100.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ONTUSDT_CFORK_1DAY_EMA50_1HOUR_45e30069-9950-4aa1-9b84-9ff39f90c55a.png" style="width: 938px; height: 601px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ONTUSDT_CFORK_1DAY_EMA50_1HOUR_45e30069-9950-4aa1-9b84-9ff39f90c55a.png" width="938" height="601" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_009.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ONTUSDT_CFORK_1DAY_EMA50_1HOUR_45e30069-9950-4aa1-9b84-9ff39f90c55a_zoom.png" style="width: 938px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ONTUSDT_CFORK_1DAY_EMA50_1HOUR_45e30069-9950-4aa1-9b84-9ff39f90c55a_zoom.png" width="938" height="606" />
+          </a>
+          --></td></tr><tr data-index="48"><td>2019-02-22 03:15:59</td><td>BTTUSDT</td><td>-5.7</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=677.14</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_008.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BTTUSDT_CFORK_1DAY_EMA50_1HOUR_e52cea1b-b9c8-458e-b26b-c0ac80bd617e.png" style="width: 966px; height: 570px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BTTUSDT_CFORK_1DAY_EMA50_1HOUR_e52cea1b-b9c8-458e-b26b-c0ac80bd617e.png" width="966" height="570" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_104.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BTTUSDT_CFORK_1DAY_EMA50_1HOUR_e52cea1b-b9c8-458e-b26b-c0ac80bd617e_zoom.png" style="width: 934px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_BTTUSDT_CFORK_1DAY_EMA50_1HOUR_e52cea1b-b9c8-458e-b26b-c0ac80bd617e_zoom.png" width="934" height="606" />
+          </a>
+          --></td></tr><tr data-index="49"><td>2019-02-24 06:56:59</td><td>ICXUSDT</td><td>-5.4</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=735.13</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_039.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ICXUSDT_CFORK_1DAY_EMA50_1HOUR_d71c74a0-3093-44ad-8950-5d5eb0d5e591.png" style="width: 929px; height: 601px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ICXUSDT_CFORK_1DAY_EMA50_1HOUR_d71c74a0-3093-44ad-8950-5d5eb0d5e591.png" width="929" height="601" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_113.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ICXUSDT_CFORK_1DAY_EMA50_1HOUR_d71c74a0-3093-44ad-8950-5d5eb0d5e591_zoom.png" style="width: 938px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ICXUSDT_CFORK_1DAY_EMA50_1HOUR_d71c74a0-3093-44ad-8950-5d5eb0d5e591_zoom.png" width="938" height="606" />
+          </a>
+          --></td></tr><tr data-index="50"><td>2019-02-24 03:16:59</td><td>LTCUSDT</td><td>-5.6</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=735.13</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_055.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_d93d6608-c168-4f80-ab6e-9ab518fe2fe8.png" style="width: 970px; height: 601px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_d93d6608-c168-4f80-ab6e-9ab518fe2fe8.png" width="970" height="601" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_086.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_d93d6608-c168-4f80-ab6e-9ab518fe2fe8_zoom.png" style="width: 929px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_d93d6608-c168-4f80-ab6e-9ab518fe2fe8_zoom.png" width="929" height="606" />
+          </a>
+          --></td></tr><tr data-index="51"><td>2019-03-13 00:14:59</td><td>ONGUSDT</td><td>-5.3</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=702.61</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_041.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ONGUSDT_CFORK_1DAY_EMA50_1HOUR_e256d0b7-c973-4b7f-8aab-8970e8221cbb.png" style="width: 915px; height: 570px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ONGUSDT_CFORK_1DAY_EMA50_1HOUR_e256d0b7-c973-4b7f-8aab-8970e8221cbb.png" width="915" height="570" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_106.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ONGUSDT_CFORK_1DAY_EMA50_1HOUR_e256d0b7-c973-4b7f-8aab-8970e8221cbb_zoom.png" style="width: 938px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ONGUSDT_CFORK_1DAY_EMA50_1HOUR_e256d0b7-c973-4b7f-8aab-8970e8221cbb_zoom.png" width="938" height="606" />
+          </a>
+          --></td></tr><tr data-index="52"><td>2019-03-11 18:12:59</td><td>ADAUSDT</td><td>-2.3</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=698.67</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_018.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ADAUSDT_CFORK_1DAY_EMA50_1HOUR_e88b5742-f4f5-4631-b191-f6e233f60347.png" style="width: 938px; height: 601px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ADAUSDT_CFORK_1DAY_EMA50_1HOUR_e88b5742-f4f5-4631-b191-f6e233f60347.png" width="938" height="601" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_059.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ADAUSDT_CFORK_1DAY_EMA50_1HOUR_e88b5742-f4f5-4631-b191-f6e233f60347_zoom.png" style="width: 905px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ADAUSDT_CFORK_1DAY_EMA50_1HOUR_e88b5742-f4f5-4631-b191-f6e233f60347_zoom.png" width="905" height="606" />
+          </a>
+          --></td></tr><tr data-index="53"><td>2019-03-16 01:11:59</td><td>LTCUSDT</td><td>-4.3</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=681.27</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_122.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_80cbcb78-4ab8-469e-8d77-acf730722051.png" style="width: 970px; height: 601px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_80cbcb78-4ab8-469e-8d77-acf730722051.png" width="970" height="601" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_026.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_80cbcb78-4ab8-469e-8d77-acf730722051_zoom.png" style="width: 929px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_LTCUSDT_CFORK_1DAY_EMA50_1HOUR_80cbcb78-4ab8-469e-8d77-acf730722051_zoom.png" width="929" height="606" />
+          </a>
+          --></td></tr><tr data-index="54"><td>2019-03-17 20:48:59</td><td>ONTUSDT</td><td>-5.8</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=693.06</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_054.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ONTUSDT_CFORK_1DAY_EMA50_1HOUR_8c2a01c6-9798-4829-92b8-722dd8fc4a50.png" style="width: 929px; height: 601px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ONTUSDT_CFORK_1DAY_EMA50_1HOUR_8c2a01c6-9798-4829-92b8-722dd8fc4a50.png" width="929" height="601" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_051.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ONTUSDT_CFORK_1DAY_EMA50_1HOUR_8c2a01c6-9798-4829-92b8-722dd8fc4a50_zoom.png" style="width: 938px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ONTUSDT_CFORK_1DAY_EMA50_1HOUR_8c2a01c6-9798-4829-92b8-722dd8fc4a50_zoom.png" width="938" height="606" />
+          </a>
+          --></td></tr><tr data-index="55"><td>2019-03-19 16:42:59</td><td>ETCUSDT</td><td>-3.3</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=652.22</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_006.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ETCUSDT_CFORK_1DAY_EMA50_1HOUR_a6b9e9a6-1167-43b4-961d-b36649634bcd.png" style="width: 970px; height: 601px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ETCUSDT_CFORK_1DAY_EMA50_1HOUR_a6b9e9a6-1167-43b4-961d-b36649634bcd.png" width="970" height="601" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_121.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ETCUSDT_CFORK_1DAY_EMA50_1HOUR_a6b9e9a6-1167-43b4-961d-b36649634bcd_zoom.png" style="width: 929px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ETCUSDT_CFORK_1DAY_EMA50_1HOUR_a6b9e9a6-1167-43b4-961d-b36649634bcd_zoom.png" width="929" height="606" />
+          </a>
+          --></td></tr><tr data-index="56"><td>2019-03-20 15:30:59</td><td>ONTUSDT</td><td>-0.2</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=643.69</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_093.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ONTUSDT_CFORK_1DAY_EMA50_1HOUR_19b707fb-6e7b-4a2a-ab7c-2d87766fb0ea.png" style="width: 929px; height: 601px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ONTUSDT_CFORK_1DAY_EMA50_1HOUR_19b707fb-6e7b-4a2a-ab7c-2d87766fb0ea.png" width="929" height="601" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_028.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ONTUSDT_CFORK_1DAY_EMA50_1HOUR_19b707fb-6e7b-4a2a-ab7c-2d87766fb0ea_zoom.png" style="width: 938px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ONTUSDT_CFORK_1DAY_EMA50_1HOUR_19b707fb-6e7b-4a2a-ab7c-2d87766fb0ea_zoom.png" width="938" height="606" />
+          </a>
+          --></td></tr><tr data-index="57"><td>2019-03-29 18:06:59</td><td>VETUSDT</td><td>-2.0</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=652.03</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_111.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_VETUSDT_CFORK_1DAY_EMA50_1HOUR_b3d1062c-136e-438c-a819-f13f51d4e64c.png" style="width: 956px; height: 601px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_VETUSDT_CFORK_1DAY_EMA50_1HOUR_b3d1062c-136e-438c-a819-f13f51d4e64c.png" width="956" height="601" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_063.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_VETUSDT_CFORK_1DAY_EMA50_1HOUR_b3d1062c-136e-438c-a819-f13f51d4e64c_zoom.png" style="width: 924px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_VETUSDT_CFORK_1DAY_EMA50_1HOUR_b3d1062c-136e-438c-a819-f13f51d4e64c_zoom.png" width="924" height="606" />
+          </a>
+          --></td></tr><tr data-index="58"><td>2019-03-29 15:21:59</td><td>ETCUSDT</td><td>-2.2</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=652.00</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_035.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ETCUSDT_CFORK_1DAY_EMA50_1HOUR_05ea06de-e6c1-4e2a-8cc3-482c5e9e8d10.png" style="width: 970px; height: 601px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ETCUSDT_CFORK_1DAY_EMA50_1HOUR_05ea06de-e6c1-4e2a-8cc3-482c5e9e8d10.png" width="970" height="601" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_066.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ETCUSDT_CFORK_1DAY_EMA50_1HOUR_05ea06de-e6c1-4e2a-8cc3-482c5e9e8d10_zoom.png" style="width: 931px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ETCUSDT_CFORK_1DAY_EMA50_1HOUR_05ea06de-e6c1-4e2a-8cc3-482c5e9e8d10_zoom.png" width="931" height="606" />
+          </a>
+          --></td></tr><tr data-index="59"><td>2019-04-03 00:44:59</td><td>FETUSDT</td><td>-5.4</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=651.90</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_007.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_FETUSDT_CFORK_1DAY_EMA50_1HOUR_5b4da72b-0939-49cc-aa08-39491d20dcc1.png" style="width: 938px; height: 570px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_FETUSDT_CFORK_1DAY_EMA50_1HOUR_5b4da72b-0939-49cc-aa08-39491d20dcc1.png" width="938" height="570" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_082.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_FETUSDT_CFORK_1DAY_EMA50_1HOUR_5b4da72b-0939-49cc-aa08-39491d20dcc1_zoom.png" style="width: 905px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_FETUSDT_CFORK_1DAY_EMA50_1HOUR_5b4da72b-0939-49cc-aa08-39491d20dcc1_zoom.png" width="905" height="606" />
+          </a>
+          --></td></tr><tr data-index="60"><td>2019-04-03 20:13:59</td><td>NEOUSDT</td><td>-5.6</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=639.30</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_045.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_NEOUSDT_CFORK_1DAY_EMA50_1HOUR_98314f6a-dc06-4cdc-aa2c-6d9573dd2101.png" style="width: 970px; height: 601px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_NEOUSDT_CFORK_1DAY_EMA50_1HOUR_98314f6a-dc06-4cdc-aa2c-6d9573dd2101.png" width="970" height="601" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_118.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_NEOUSDT_CFORK_1DAY_EMA50_1HOUR_98314f6a-dc06-4cdc-aa2c-6d9573dd2101_zoom.png" style="width: 929px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_NEOUSDT_CFORK_1DAY_EMA50_1HOUR_98314f6a-dc06-4cdc-aa2c-6d9573dd2101_zoom.png" width="929" height="606" />
+          </a>
+          --></td></tr><tr data-index="61"><td>2019-04-03 18:41:59</td><td>ONTUSDT</td><td>-5.8</td><td>looser</td><td>CFORK_1DAY/EMA50_1HOUR</td><td>Initial_position_size=639.30</td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_042.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ONTUSDT_CFORK_1DAY_EMA50_1HOUR_c5c9c5e1-0f9c-46a1-a18c-3180a6e3e060.png" style="width: 929px; height: 601px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ONTUSDT_CFORK_1DAY_EMA50_1HOUR_c5c9c5e1-0f9c-46a1-a18c-3180a6e3e060.png" width="929" height="601" />
+          </a>
+          --></td><td><img src="BotV5Fourchette_1.19.dev1_ambre_20201218_091841_files/BotV5Fourchette_1_074.png" class="img-fluid">
+          <!--
+          <a class="image" href="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ONTUSDT_CFORK_1DAY_EMA50_1HOUR_c5c9c5e1-0f9c-46a1-a18c-3180a6e3e060_zoom.png" style="width: 938px; height: 606px">
+            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="/chart/BotV5Fourchette_1.19.dev1_ambre_20201218_091841/BotV5Fourchette_1.19.dev1_ambre_20201218_091841_ONTUSDT_CFORK_1DAY_EMA50_1HOUR_c5c9c5e1-0f9c-46a1-a18c-3180a6e3e060_zoom.png" width="938" height="606" />
+          </a>
+          --></td></tr></tbody></table><div class="sticky_anchor_end"></div></div>
+      <div class="fixed-table-footer"><table><thead><tr></tr></thead></table></div>
+      </div>
+      <div class="fixed-table-pagination" style="display: none;"></div>
+      </div><div class="clearfix"></div>
+</body></html>
